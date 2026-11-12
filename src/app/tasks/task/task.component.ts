@@ -1,0 +1,12 @@
+import { Component, Input } from '@angular/core';
+import { Task } from './task.model';
+
+@Component({
+  imports: [],
+  selector: 'app-task',
+  styleUrl: './task.component.css',
+  templateUrl: './task.component.html',
+})
+export class TaskComponent {
+  @Input({ required: true }) task!: Task;
+}
